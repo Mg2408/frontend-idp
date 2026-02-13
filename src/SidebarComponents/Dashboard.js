@@ -78,6 +78,7 @@ const Dashboard = () => {
       try {
         setLoading(true);
         const BASE_URL = process.env.REACT_APP_AI_EXTRACT;
+        
 
         const response = await fetch(
           `${BASE_URL}/api/get_extracted_documents?template=wind_mit`
